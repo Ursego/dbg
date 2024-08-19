@@ -97,7 +97,7 @@ SELECT pkg || '.' || proc AS proc, msg, TO_CHAR(wen, 'DD-MON-YYYY hh:mi:ss') AS 
  ORDER BY id;
 
 ***************************************************************************************************************************************************
-@@@ If you have called dbg() from many packages, then, before committing your work, find and remove all the dbg() calls:
+If you have called dbg() from many packages, then, before committing your work, find and remove all the dbg() calls:
 ***************************************************************************************************************************************************
 SELECT name, type, line, text
   FROM user_source
